@@ -1,0 +1,24 @@
+[console_scripts]
+space = space.__main__:main
+wspace = space.wspace:wspace
+
+[space.commands]
+clock = space.clock:space_clock
+config = space.config:space_config
+events = space.events:space_events
+log = space.config:space_log
+map = space.map:space_map
+oem = space.ccsds:space_oem
+opm = space.ccsds:space_opm
+passes = space.passes:space_passes
+phase = space.phase:space_phase
+planet = space.planet:space_planet
+sat = space.sat:space_sat
+station = space.station:space_station
+tle = space.tle:space_tle
+
+[space.wshook]
+00 = space.config:wshook
+10 = space.tle:wshook
+20 = space.station:wshook
+30 = space.sat:wshook

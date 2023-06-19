@@ -1,0 +1,14 @@
+numpy
+sgp4
+jplephem
+lxml
+
+[dev]
+sphinx
+sphinx_rtd_theme
+tox
+
+[tests]
+pytest
+pytest-cov
+xmlschema>=1.4.1
